@@ -85,7 +85,7 @@ ul.menu > li > a:hover {
 
 .sub:hover .submenu {
     display: block;
-
+    z-index: 999;
 }
 
 .font2 {
