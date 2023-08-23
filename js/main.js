@@ -26,7 +26,7 @@ document.getElementById('prev').onclick = function(){
 
 document.querySelectorAll('a[href="#"]').forEach((link) => {
   link.addEventListener('click', (e) => {
-    e.preventDefault(); // Ngăn chặn hành vi mặc định của liên kết
+    e.preventDefault();
     window.scrollTo({
       top: 0,
     });

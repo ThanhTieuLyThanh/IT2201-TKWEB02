@@ -80,12 +80,10 @@ function handleFormValidation(form) {
         };
 
         function checkEmail() {
-            let pattern = /^[^ ]+@[^]+\.[a-z]{2,3}$/; //pattern to validate email
+            let pattern = /^[^ ]+@[^]+\.[a-z]{2,3}$/; 
             if (!eInput.value.match(pattern)) {
                 eField.classList.add("error");
                 let errorTxt = eField.querySelector(".error");
-                // if email is not empty then show "Enter a valid email address" until email is valid,
-                // else show "Email can't be blank."
                 (eInput.value !== "")
                     ? (errorTxt.innerText = "Địa chỉ email không hợp lệ")
                     : (errorTxt.innerText = "Chưa nhập email");
@@ -96,7 +94,6 @@ function handleFormValidation(form) {
 
         pInput.onkeyup = () => {
             if (pInput.value !== "") {
-                // if password is not empty, remove the error class
                 pField.classList.remove("error");
             } else {
                 pField.classList.add("error");
@@ -114,14 +111,12 @@ function handleFormValidation(form) {
             };
         });
 
-        // let's work on what to do after the user fills up proper details
-        // if error class is not present in eField and pField, then the user has entered proper details
         if (
             !eField.classList.contains("error") &&
             !pField.classList.contains("error") &&
             !hasError
         ) {
-            // submit the form data here
+            
             window.location.href="#"; 
             console.log("Form Submitted!");
         }
@@ -129,11 +124,9 @@ function handleFormValidation(form) {
     
 }
 
-// Get the login and register forms
 const loginForm = document.getElementById("login");
 const registerForm = document.getElementById("register");
 
-// Apply the validation logic to each form
 handleFormValidation(loginForm);
 handleFormValidation(registerForm);
 
