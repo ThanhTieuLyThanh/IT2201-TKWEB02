@@ -274,6 +274,7 @@
     }
     .heading p {
         font-size: 15px;
+        margin: 0 2px;
     }
     .gioithieu h2 {
         font-size: 200%;

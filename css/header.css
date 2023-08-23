@@ -159,12 +159,12 @@ ul.menu > li > a:hover {
     background-color: #ffffff; 
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 768px) {
      .button{
         display: none;
     }
     .nav-menu.responsive{
-        top: 80px;
+        top: 70px;
     }
     .nav-menu{
         position: absolute;
