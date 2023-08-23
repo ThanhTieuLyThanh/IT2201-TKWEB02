@@ -1,0 +1,221 @@
+.grid {
+    display: grid;
+}
+
+.value_container{
+    row-gap: 3rem;
+}
+.value {
+    height: fit-content;
+}
+.value_orbe{
+    width: 266px;
+    height: 316px;
+    background-color:hsl(228, 24%, 97%);
+    border-radius: 135px 135px 16px 16px
+}
+
+.value_img {
+    position: absolute;
+    width: 250px;
+    height: 300px;
+    overflow: hidden; 
+    border-radius: 125px 125px 12px 12px;
+    inset: 0;
+    margin: auto;
+} 
+
+.martket_section , .sport_section {
+    flex-direction: column;
+    height: fit-content;
+    padding: 0 1rem 0 1rem;
+}
+.martket_section div {
+    width: 100%;
+}
+
+.martket_right i {
+    width: 100%;
+}
+
+.martket_right img {
+    width: 100%;
+    margin: 5px;
+    border-radius: 5%;
+}
+
+.eat_section , .relax_section{
+    flex-direction: column-reverse;
+    height: fit-content;
+    padding: 0 1rem 0 1rem;
+}
+.relax-right{
+    width: 100%;
+}
+.gallery-display-area{
+    width: 80%;
+}
+.eat_section div {
+    width: 100%;
+}
+.eat-left {
+    text-align: center;
+}
+.eat-left img {
+    width: 45%;
+}
+.sport-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.box-value {
+    width: 100%;
+}
+
+.sport-container .box-value img { 
+    height: fit-content; 
+}
+
+/* house */
+
+.im {
+    flex-direction: column;
+}
+
+.f {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.btn5 {
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.box-house {
+    width: 242px;
+}
+
+/* main */
+
+.intro {
+    flex-direction: column;
+}
+
+.intro-pic {
+    text-align: center;
+}
+.intro-text {
+    margin: 0;
+    width: 100%;
+}
+.intro-text h1 {
+    text-align: center;
+    font-size: 40px;
+    /* letter-spacing: 8px; */
+    margin: 0;
+}
+
+.gioithieu {
+    width: 100%;
+    margin: 0;
+}
+
+.row {
+    flex-direction: column;
+    margin: 0;
+}
+
+.ui-card {
+    width: fit-content;
+    margin-bottom: 5px;
+}
+
+.line {
+    width: 100%;
+}
+
+.step-wizard-list {
+    width: 100%;
+}
+
+.step-wizard-item {
+    width: 25%;
+    padding: 0;
+    min-width: 0;
+    align-items: center;
+}
+
+.progress-count {
+    margin: 0;
+}
+
+.progress-label {
+    margin: 0;
+}
+
+/* lienhe */
+.contact {
+    padding: 0;
+    margin: 0;
+}
+.container-lienhe {
+    flex-direction: column-reverse;
+}
+
+.contactForm {
+    width: 80%;
+    padding: 10px;
+    margin-left: 0;
+}
+.container-lienhe .contactInfo {
+    width: 96%;
+    margin: 2%;
+}
+/* service */
+.container{
+    padding: 0;
+}
+
+.container .box-container{
+    padding: 0;
+    margin: 1%;
+    /* display: grid;
+    grid-template-columns: 48% 48%;
+    gap:2%; */
+    display: flex;
+    flex-direction: column;
+}
+
+#divOne {
+    height: fit-content;
+    width: 90%;
+    top: 4%; 
+    left: 1%;
+    padding: 10px;
+ }
+
+/* log */
+.main_log {
+    min-height: fit-content;
+}
+.form-box-user{
+    margin: 2rem 0;
+}
+@media only screen and (max-width: 500px) {
+    .form-box-user{
+        width: 100%;
+        height: 500px;
+    }
+    .register-container, .login-container{
+        width: 100%;
+        padding: 0 20px;
+        /* margin: 2rem auto; */
+    }
+    .register-container .two-forms{
+        flex-direction: column;
+        gap: 0;
+    }
+}
