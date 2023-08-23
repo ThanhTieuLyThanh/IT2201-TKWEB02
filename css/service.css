@@ -84,7 +84,6 @@ body {
 }
 #divOne {
     position: fixed;
-    height: 80%;
     width: 75%;
     background: white;
     display: none;
@@ -92,11 +91,13 @@ body {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    top: 15%; left: 10%;
+    top: 75px; 
+    left: 10%;
     border-radius: 10px;
+    z-index: 3;
  }
  .form-box{
-    padding: 100px;
+    padding: 20px 50px;
     margin:0 28px;
     border-radius: 10px;
     border: solid 1px gray;
