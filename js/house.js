@@ -1,14 +1,4 @@
 window.onload = function() {
-    let t = document.getElementById("myMenuFunction")
-    t.onclick = function () {
-    var i = document.getElementById("navMenu");
-    if(i.className === "nav-menu") {
-        i.className += " responsive";
-    } else {
-        i.className = "nav-menu";
-    }
-   }
-
     let i = document.getElementById("main");
     let images = document.querySelectorAll(".properties-container .box-house img"); 
     for (let im of images) {

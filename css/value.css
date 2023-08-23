@@ -9,13 +9,10 @@ body {
     margin: 0;
 }
 .value {
-    height: 690px;
+    height: 730px;
 }
 .grid {
     display: flex;
-}
-.value {
-    height: 690px;
 }
 .container-value {
     width: 90%;
