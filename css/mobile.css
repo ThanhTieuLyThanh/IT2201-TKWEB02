@@ -1,7 +1,12 @@
 .grid {
     display: grid;
 }
-
+.section_subtitle {
+    font-size: 30px;
+}
+.martket_left h1, .eat-right h1, .relax-left h1, .sport-header h1 {
+    font-size: 35px;
+}
 .value_container{
     row-gap: 3rem;
 }
@@ -87,13 +92,21 @@
     width: 100%;
     margin: 0 auto;
 }
-
+.heading h2 {
+    font-size: 30px;
+}
+.heading p {
+    font-size: 20px;
+}
 .btn5 {
     display: flex;
     margin: 0 auto;
     text-align: center;
 }
-
+.btn5 img {
+    width: 100%;
+    object-fit: cover;
+} 
 .box-house {
     width: 242px;
 }
@@ -102,6 +115,13 @@
 
 .intro {
     flex-direction: column;
+}
+
+.intro-pic {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 2%;
 }
 
 .intro-pic {
@@ -165,6 +185,11 @@
     flex-direction: column-reverse;
 }
 
+.contact .content h1 {
+    padding-bottom: 0;
+    font-size: 35px;
+}
+
 .contactForm {
     width: 80%;
     padding: 10px;
@@ -187,6 +212,9 @@
     gap:2%; */
     display: flex;
     flex-direction: column;
+}
+.container .box-container .box {
+    width: 90%;
 }
 
 #divOne {
@@ -218,4 +246,26 @@
         flex-direction: column;
         gap: 0;
     }
+
+
+    .intro-pic {
+        display: block;
+    }
+    .ui-card img {
+        width: auto;
+        height: inherit;
+    }
+
+
+    .container .heading {
+        font-size: 30px;
+    }
+
+    .heading h2 {
+        font-size: 25px;
+    }
+    .heading p {
+        font-size: 15px;
+    }
+    
 }
