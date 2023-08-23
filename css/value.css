@@ -413,7 +413,7 @@ body {
     text-align: center;
     font-size: 22px;
     margin: auto;
-    color: lightslategray;
+    color: burlywood;
 }
 
 .gototop i {
@@ -421,5 +421,6 @@ body {
 }
 
 .gototop:hover{
-    color: burlywood;
+    color: rgb(214, 235, 255);
 }
+
