@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lí dịch vụ</title>
+    <link href="images/logo.png" rel="shortcut icon" />
+    <link rel="stylesheet" href="css/service.css"/>
+    <link rel="stylesheet" href="css/header.css"/>
+    <link rel="stylesheet" href="css/footer.css"/>
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 786px)"/>
+    <script src="js/menu.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+    <header class="flex between">
+        <div class="flex">
+            <div class="logo"><img src="images/logo.png" alt="logo" class="logo"/></div>
+            <div><a href="main.html"><h1 class="font1">VACASSA</h1></a></div>
+        </div>
+        <div class="nav-menu" id="navMenu">
+            <ul class="menu left flex font2">
+                <li><a href="main.html"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="main.html">Giới thiệu</a></li>
+                <li class="sub">
+                    <a href="#">Dịch vụ</a>
+                    <ul class="submenu menu flex">
+                        <li><a href="house.html">Căn hộ</a></li>
+                        <li><a href="#">Đăng kí các gói dịch vụ</a></li>
+                    </ul>
+                </li>
+                <li><a href="value.html">Tiện ích</a></li>
+                <li><a href="tintuc.html">Tin tức</a></li>
+                <li><a href="lienhe.html">Liên hệ</a></li>
+            </ul>
+        </div>
+    
+        <div class="button">
+            <a href="log.html"><button class="btn" id="loginBtn">Đăng nhập</button></a>
+        </div>
+
+        <div class="flex">
+            <div class="nav-menu-btn">
+                <a href="log.html"><i class="fa-solid fa-user"></i></a>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="fa-solid fa-bars" id="myMenuFunction"></i>
+            </div>
+        </div>
+       
+    </header>
+    <main>
+        <div class="container">
+            <h1 class="heading">Đăng Kí Dịch Vụ</h1>
+            <div class="box-container">
+                <div class="box">
+                    <img src="images/main/pic1.jpg" alt="">
+                    <h3>Dọn Vệ Sinh</h3>
+                    <p>Đăng kí dịch vụ dọn vệ sinh chuyên nghiệp ngay tại căn hộ của bạn</p>
+                    <a href="#" id="read" onclick="toggle()">Đăng kí</a>
+                </div>
+        
+                <div class="box">
+                    <img src="images/main/pic2.jpg" alt="">
+                    <h3>Bảo Trì</h3>
+                    <p>Đăng kí dịch vụ sửa chữa, bảo trị nếu có tình trạng hư hỏng.</p>
+                    <a href="#" id="read" onclick="toggle()">Đăng kí</a>
+                </div>
+        
+                <div class="box">
+                    <img src="images/main/pic3.jpg" alt="">
+                    <h3>Đăng Kí Gửi Xe</h3>
+                    <p>Đăng kí gửi xe mỗi tháng ngay tại hầm xe của tòa nhà.</p>
+                    <a href="#" id="read" onclick="toggle()">Đăng kí</a>
+                </div>
+        
+                <div class="box">
+                    <img src="images/main/pic3.jpg" alt="">
+                    <h3>Đăng Kí Sử Dụng Khu Thể Thao</h3>
+                    <p>Đăng kí sử dụng khu thể thao bao gồm phòng gym và hồ bơi hiện có ngay tại tòa nhà.</p>
+                    <a href="#" id="read" onclick="toggle()">Đăng kí</a>
+                </div>
+        
+                <div class="box">
+                    <img src="images/main/pic1.jpg" alt="">
+                    <h3>Đăng Kí Sử Dụng Khu Vui Chơi</h3>
+                    <p>Đăng kí sử dụng khu vui chơi cho trẻ em ngay tại tòa nhà.</p>
+                    <a href="#" id="read" onclick="toggle()">Đăng kí</a>
+                </div>
+        
+                <div class="box">
+                    <img src="images/main/pic2.jpg" alt="">
+                    <h3>Đăng Kí Dịch Vụ Thú Cưng</h3>
+                    <p>Đăng kí dịch vụ thú cưng cho thú cưng ngay tại tòa nhà.</p>
+                    <a href="#" id="read" onclick="toggle()">Đăng kí</a>
+                </div>
+            </div>
+        </div>
+    <div class="form-box" id="divOne">
+        <a class="close" href="#" onclick="toggle()">&times;</a>
+        <h1 class="form-title">Điền Thông Tin Đăng Kí</h1>
+        <form action="#">
+          <div class="main-user-info">
+            <div class="user-input-box">
+              <label for="fullName">Họ và tên</label>
+              <input type="text"
+                      placeholder="Điền Họ và tên"/>
+            </div>
+            <div class="user-input-box">
+                <label>Ngày</label>
+                <input type="date">
+            </div>
+            <div class="user-input-box">
+                <label>Chung cư</label> 
+                <select>
+                    <option value="vinhome">Vinhomes Central Park</option>
+                    <option value="vinhome">Vinhomes Central Park</option>
+                    <option value="vinhome">Vinhomes Central Park</option>
+                    <option value="vinhome">Vinhomes Central Park</option>
+                    <option value="vinhome">Vinhomes Central Park</option>
+                    <option value="vinhome">Vinhomes Central Park</option>
+                </select>
+            </div>
+            <div class="user-input-box">
+                <label>Giờ</label>
+                <input type="time">
+            </div>
+            <div class="user-input-box">
+                <label>Tòa</label> 
+                <select >
+                    <option value="toaA">Tòa A</option>
+                    <option value="toaB">Tòa B</option>
+                    <option value="toaC">Tòa C</option>
+                    <option value="toaD">Tòa D</option>
+                    <option value="toaE">Tòa E</option>
+                </select>
+            </div>
+            <div class="user-input-box">
+                <label>Email</label> 
+                <input type="email">
+            </div>
+            <div class="user-input-box">
+                <label>Số nhà</label> 
+                <input type="text">
+            </div>
+            <div class="user-input-box">
+                <label>Lưu ý</label> 
+				<textarea iplaceholder="Điền lưu ý..."></textarea>
+            </div>
+          </div>
+          <div class="form-submit-btn">
+            <input type="submit" value="Đăng kí" onclick="toggle()">
+          </div>
+        </form>  
+    </div>
+
+
+        <script>
+            function toggle(){
+                var popup=document.getElementById('divOne');
+                popup.classList.toggle('active')
+            }
+        </script>
+    </main>
+
+    <footer class="footer">
+        <div class="container-foot">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h4>Website</h4>
+                    <ul class="link">
+                        <li><a href="main.html">Trang chủ</a></li>
+                        <li><a href="main.html">Dịch vụ</a></li>
+                        <li><a href="value.html">Tiện ích</a></li>
+                        <li><a href="tintuc.html">Tin tức</a></li>
+                        <li><a href="lienhe.html">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Dịch vụ</h4>
+                    <ul>
+                        <li><a href="house.html">Lựa chọn căn hộ</a></li>
+                        <li><a href="#">Quản lý dịch vụ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Liên hệ</h4>
+                    <ul>
+                        <div class="icon"><i class="fa-solid fa-phone" aria-hidden="true"></i></div>
+                        <li class="text">+84 332 2319 08</li>
+                        <div class="icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></div>
+                        <li class="text"><a href="mailto:vancassa_contact@gmail.com">vancassa_contact@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Theo dõi</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>   
+    <script src="js/header.js"></script>
+</body>
+</html>
